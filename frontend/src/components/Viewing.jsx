@@ -2,6 +2,9 @@ import React,{useEffect} from 'react';
 import {gsap, Power2} from 'gsap'
 import duration from './duration'
 import "../style/viewing.scss"
+// Force CSSPlugin to not get dropped during build
+import { CSSPlugin } from 'gsap/CSSPlugin'
+gsap.registerPlugin(CSSPlugin)
 
 const Viewing = props =>{
     let animate

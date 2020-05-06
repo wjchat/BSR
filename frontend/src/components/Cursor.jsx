@@ -1,6 +1,9 @@
 import React,{useEffect, useState} from 'react';
 import gsap from 'gsap';
 import "../style/cursor.scss"
+// Force CSSPlugin to not get dropped during build
+import { CSSPlugin } from 'gsap/CSSPlugin'
+gsap.registerPlugin(CSSPlugin)
 
 const Cursor = props => {
     let animate;

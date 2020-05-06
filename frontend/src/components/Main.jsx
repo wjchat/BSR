@@ -15,7 +15,9 @@ import Viewing from './Viewing.jsx';
 import TransitionLink from 'gatsby-plugin-transition-link'
 
 import duration from './duration.js';
-//<img src={item.image} alt={item.name}/>
+// Force CSSPlugin to not get dropped during build
+import { CSSPlugin } from 'gsap/CSSPlugin'
+gsap.registerPlugin(CSSPlugin)
 
 
 //not using these for now

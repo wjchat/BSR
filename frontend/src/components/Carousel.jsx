@@ -2,6 +2,9 @@ import React,{useState, useEffect,useCallback} from 'react';
 import {gsap, Power4, Power2} from 'gsap';
 import duration from './duration.js'
 import nextArrow from '../images/next.png';
+// Force CSSPlugin to not get dropped during build
+import { CSSPlugin } from 'gsap/CSSPlugin'
+gsap.registerPlugin(CSSPlugin)
 
 
 const Carousel = props => {
