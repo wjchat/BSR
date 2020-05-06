@@ -1,7 +1,7 @@
 import React,{useState} from "react"
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from "../components/layout.js"
+import SEO from "../components/seo.js"
 
 import Main from "../components/Main.jsx"
 import Background from '../components/Background.jsx'
