@@ -7,8 +7,7 @@ import Main from "../components/Main.jsx"
 import Background from '../components/Background.jsx'
 import PageTransition from "../components/pageTransition.jsx"
 // Force CSSPlugin to not get dropped during build
-import { CSSPlugin } from 'gsap/CSSPlugin'
-gsap.registerPlugin(CSSPlugin)
+
 
 
 const IndexPage = () => {
